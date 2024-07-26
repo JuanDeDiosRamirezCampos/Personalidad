@@ -5,7 +5,7 @@ import routes from './routes/formulario.routes.js';
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(cors({ origin: 'https://personalidad-ef850.web.app' }));
 
 app.use("/api",routes);
 
